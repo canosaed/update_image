@@ -11,10 +11,10 @@ if(isset($_POST["submit"])){
          */
         
         //DB details
-        $dbHost     = '10.2.45.8';
+        $dbHost     = '';
         $dbUsername = 'root';
-        $dbPassword = 'sdh2211anm';
-        $dbName     = 'causas';
+        $dbPassword = '';
+        $dbName     = '';
         $dbport = 3306;
         
         //Create connection and select DB
