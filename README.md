@@ -1,2 +1,2 @@
-# update_image
-code php --> update images
+# upload_image
+code php --> upload images
