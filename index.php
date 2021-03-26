@@ -58,7 +58,7 @@
                     /****/
 
                     //Preparar la orden SQL
-                    $consulta= "SELECT * FROM causas.causas";
+                    $consulta= "SELECT * FROM imagenes";
 
                     // Ejecutar la orden y obtener datos
                     $datos = $db->query($consulta);
@@ -86,7 +86,7 @@
                                                     <?php
                                                     // Ir Imprimiendo las filas resultantes
                                                         while ($fila = mysqli_fetch_array($datos)){
-                                                            echo '<option value="'.$fila ["caus_id"].'">'.$fila ["caus_id"].'</option>';
+                                                            echo '<option value="'.$fila ["id"].'">'.$fila ["id"].'</option>';
                                                         }
                                                     ?>
                                                     </select>
