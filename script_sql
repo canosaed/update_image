@@ -1,0 +1,6 @@
+CREATE TABLE `imagenes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `descripcion` text CHARACTER SET utf8mb4,
+  `imagen` BLOB,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1000 DEFAULT CHARSET=utf8;
