@@ -1,6 +1,12 @@
-CREATE TABLE `imagenes` (
+CREATE DATABASE IF NOT EXISTS `upload_image` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE `upload_image`;
+
+CREATE TABLE IF NOT EXISTS `imagenes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(255) DEFAULT NULL,
+  `tipo` varchar(100) DEFAULT NULL,
   `descripcion` text CHARACTER SET utf8mb4,
-  `imagen` BLOB,
+  `imagen` LONGBLOB NOT NULL,
+  `creado_en` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1000 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
